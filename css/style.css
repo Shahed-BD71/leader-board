@@ -18,7 +18,15 @@ section{
     border-radius: 10px;
 }
 .section-title{
-    color: violet;
+    color: saddlebrown;
+}
+.player:hover {
+    font-size: 20px;
+}
+.player>img:hover {
+height: 100px;
+transition-duration: 2s;
+
 }
 .top-players, .blogs, .courses{
     display: grid;
@@ -29,8 +37,19 @@ section{
 .top-players, .courses {
     grid-template-columns: repeat(3, 1fr);
 }
+.top-players {
+    border-bottom: 3px solid #e5e9dc;
+    margin-bottom: 50px;
+    padding-bottom: 30px;
+}
 .blogs {
     grid-template-columns: repeat(2, 1fr);
+    box-sizing: border-box;
+}
+.blog {
+    border: 1px solid lightgray;
+    border-radius: 5%;
+
 }
 
 .player, .blog{
@@ -44,26 +63,20 @@ section{
 .thumbnail img {
     width: 200px;
     margin-right: 20px;
+    padding-top: 0px;
 }
 
 .course img {
-    width: 200px;
+    width: 100%;
 }
 
-.duration{
-    background-color: lightpink;
-    font-weight: 700;
-    border-radius: 20%;
-    margin-left: 70%;
-}
 .course-info {
     display: flex;
 }
-.course-details {
-    position: relative;
-    display: block;
+.course {
+    box-shadow: 2px 2px 2px gray;
+    border-radius: 5%;
 }
-
 .filled {
     color: goldenrod;
     font-size: 0.8em;
@@ -72,7 +85,23 @@ section{
     color: lightgray;
     font-size: 0.8em;
 }
+.duration {
+    margin-left: auto;
+    background-color: lightpink;
+    border-radius: 10px;
+}
+footer{
+text-align: center;
+font-size: 15px;
+color: purple;
+margin: 50px 0px 20px 0px;
+}
 
+.footer {
+    font-weight: 700;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+}
 @media (max-width:992px){
     .top-players, .courses {
         grid-template-columns: repeat(2, 1fr);
