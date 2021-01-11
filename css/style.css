@@ -44,7 +44,6 @@ transition-duration: 2s;
 }
 .blogs {
     grid-template-columns: repeat(2, 1fr);
-    box-sizing: border-box;
 }
 .blog {
     border: 1px solid lightgray;
@@ -93,12 +92,13 @@ transition-duration: 2s;
 footer{
 text-align: center;
 font-size: 15px;
-color: purple;
+color:teal;
 margin: 50px 0px 20px 0px;
 }
-.footer {
+footer a {
     font-weight: 700;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color:teal;
+    font-family: Tahoma, sans-serif;
     
 }
 @media (max-width:992px){
@@ -114,7 +114,8 @@ margin: 50px 0px 20px 0px;
     .top-players, .courses {
         grid-template-columns: repeat(1, 1fr);
     }
-    .blog {
+    .blogs {
         display: block;
+        
     }
 }
