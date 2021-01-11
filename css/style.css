@@ -48,7 +48,10 @@ transition-duration: 2s;
 .blog {
     border: 1px solid lightgray;
     border-radius: 5%;
-
+}
+.course-details a, .blog-info a {
+    text-decoration: none;
+    font-weight: 700;
 }
 
 .player, .blog{
@@ -98,7 +101,8 @@ margin: 50px 0px 20px 0px;
 footer a {
     font-weight: 700;
     color:teal;
-    font-family: Tahoma, sans-serif;
+    font-family:sans-serif;
+    text-decoration: none;
     
 }
 @media (max-width:992px){
